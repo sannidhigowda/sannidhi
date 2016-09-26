@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+</head>
+<style>
+
+body{
+	background-image:url("about.jpg")
+	  }
+</style>
+<body>
+<nav>
+<a style="color:white; font-size: 30px" href="home.html">HOME-</a>
+<a style="color:white; font-size: 30px" href="login.html">LOGIN-</a>
+<a style="color:white; font-size: 30px" href="about.html">ABOUT US-</a>
+<a style="color:white; font-size: 30px"href="contact.html">CONTACT US-</a>
+<a style="color:white; font-size: 30px"href="furniture.html">CATEGORIES</a>
+</nav>
+<h1 align="center" style="color:white; font-size: 80px">Furniture World</h1>
+<marquee diretion="left" style="color:red; font-size: 50px">Perfect Choice For Your Furniture Solution</marquee>
+<form action = "fill.html">
+<fieldset>
+<legend style="color:white; font-size: 30px">
+<span style="font-family:arial;font-size:30;color:red;font-weight:bold">
+login
+</span>
+</legend>
+<br>
+<p class="one">
+<label style="color:white; font-size: 30px">
+Name:
+<input type="text" onmouseover="msg(0)" onmouseout="msg(5)"/>
+</label>
+<br><br>
+<label style="color:white; font-size: 30px">
+Email:
+<input type="text" onmouseover="msg(1)" onmouseout="msg(5)"/>
+</label>
+<br><br>
+<label style="color:white; font-size: 30px">
+User ID:
+<input type="text" onmouseover="msg(2)" onmouseout="msg(5)"/>
+</label style="color:white; font-size: 30px">
+<br>
+<script type="text/javascript" src="check.js">
+</script>
+<label style="color:white; font-size: 30px">
+Password:
+<input type="password" id="initial" onmouseover="msg(3)" onmouseout="msg(5)"/>
+</label style="color:white; font-size: 30px">
+<br>
+<label style="color:white; font-size: 30px">
+Re-enter password:
+<input type="password" id="final" onmouseover="msg(4)" onmouseout="msg(5)"/>
+</label style="color:white; font-size: 30px">
+<br>
+<script type="text/javascript">
+document.getElementById("final").onchange=check;
+</script>
+<br>
+</fieldset>
+<br>
+<input type="button" value="submit" onclick="submit()"/>
+<input type="reset" value="reset"/>
+</p>
+</form>
+</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>COFFEE SHOP</title>
+</head>
+<style>
+
+body{
+	background-image:url("coffee1.jpg")
+	  }
+</style>
+<script type="text/javascript">
+function dispHome(){
+	document.getElementById('home').style.display='block'
+	document.getElementById('menu').style.display='none'
+	document.getElementById('contact').style.display='none'
+}
+
+function dispMenu(){
+	document.getElementById('home').style.display='none'
+	document.getElementById('menu').style.display='block'
+	document.getElementById('contact').style.display='none'
+}
+
+function dispAbout(){
+	document.getElementById('home').style.display='none'
+	document.getElementById('menu').style.display='none'
+	document.getElementById('contact').style.display='none'
+}
+function dispContact(){
+	document.getElementById('home').style.display='none'
+	document.getElementById('menu').style.display='none'
+	document.getElementById('contact').style.display='block'
+}
+</script>
+<body>
+<nav>
+<a style="color:white; font-size: 30px" onclick="dispHome()">HOME</a>
+<a style="color:white; font-size: 30px" onclick="dispMenu()">MENU</a>
+<a style="color:white; font-size: 30px" onclick="dispContact()">CONTACT</a>
+</nav>
+<div class="home" id="home" style="display:block">
+<h1 align="center" style="color:white; font-size: 80px">COFFEE WORLD</h1>
+<marquee diretion="left" style="color:red; font-size: 50px">Coffee over anything</marquee>
+</div>
+<div class="menu" id="menu" style="display:none">
+	<h1 align="center" style="color:white">MENU:</h1>
+<table  align="center" border="5">
+<tr>
+<th class="size">NAME</th>
+<th class="size">PRICE</th>
+</tr>
+
+<tr>
+<td style="color:white ;    font-size: 21px;">frappe</td>
+<td style="color:white ;    font-size: 21px;">Rs.110</td>
+<td><img src="5.jpg" height="150" width="200"></td>
+</tr>
+<tr>
+
+<td style="color:white ;    font-size: 21px;">cappuccino</td>
+<td style="color:white ;    font-size: 21px;">Rs.150</td>
+<td><img src="6.jpg" height="150" width="200"></td>
+</tr>
+
+<tr>
+<td style="color:white ;    font-size: 21px;">devils own</td>
+<td style="color:white ;    font-size: 21px;">Rs.220</td>
+<td><img src="7.jpg" height="150" width="200"></td>
+</tr>
+
+</tr>
+<tr>
+<td style="color:white ;    font-size: 21px;" >cold coffee</td>
+<td style="color:white ;    font-size: 21px;">Rs.100</td>
+<td><img src="8.jpg" height="150" width="200"></td>
+</tr>
+</table>
+
+</div>
+<div class="contact" id="contact" style="display:none">
+	<h1 align="center" style="color:black">CONTACT US:</h1>
+<form>
+	<pre align=center style="color:black ;    font-size: 21px;">
+		Address:#31,1st main,3rd stage,
+		vijayanagar,mysore-570017
+		mob:9986783427 ,land:08212516607.
+		www.cafeworld.in
+	</pre>
+	<p style="color:red ;    font-size: 21px;">Enter your queries:</p>
+	<p style="color:red ;    font-size: 21px;">Name</p>
+	<input type="text" name=""></br>
+	<p style="color:red ;    font-size: 21px;" >Email</p>
+	<input type="text" name=""></br>
+	<p style="color:red ;    font-size: 21px;">Details</p>
+	<textarea rows="5" cols="20"></textarea></br>
+	<input type="submit" name="">
+
+</div>
+</body>
+</html>

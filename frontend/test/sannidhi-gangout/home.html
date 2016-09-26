@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.block{
+   display: inline-block;
+   width: 400px;
+   height: 350px;
+   margin: 10px;
+   border: 3px solid Gray;
+   align-content: center;
+}
+.block1{
+ display: inline-block;
+   width: 400px;
+   height: 380px;
+   margin: 10px;
+   border: 3px solid Gray;
+   align-content: center;
+}
+</style>
+
+<body>
+<nav>
+<a style="color:black; font-size: 30px" class="a1">About</a>
+<a style="color:black; font-size: 30px" >Sign up</a>
+<div class="home">
+</nav>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="slider1.png" style="width:100%">
+  <div class="text">Mysore Web Aps Eng</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="slider2.png" style="width:100%">
+  <div class="text">Mysore Web Aps Eng</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="slider3.png" style="width:100%">
+  <div class="text">Mysore Web Aps Eng</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<div class="block">
+ <h4>Event1</h4>
+ <img class="img1" src="default-image.png" width="290" height="100" alt="alternate">
+ <h5>Past event</h5>
+ <p>Core Ruby Workshop</p>
+ <img src="icon-location.png" ><p>Bangalore</p>
+ <img src="icon-calender.png">
+</div>
+<div class="block1">
+ <h4>Mysore Web Apps Engineering</h4>
+  <button type="button">Join</button></br>
+
+ <img class="img1" src="default-image.png" width="290" height="100" alt="alternate">
+   <h5>Past event</h5>
+ <p>Core Ruby Workshop</p>
+ <img src="icon-location.png" ><p>Bangalore</p>
+   <img src="icon-calender.png">
+
+</div>
+<div class="block">
+ <h4>Event3</h4>
+
+ <img class="img1" src="default-image.png" width="290" height="100" alt="alternate">
+   <h5>Past event</h5>
+ <p>Core Ruby Workshop</p>
+ <img src="icon-location.png" ><p>Bangalore</p>
+   <img src="icon-calender.png">
+   </div>
+   </div>
+   
+</div>
+</div>
+<div class="about" style="display:none">
+	</nav>
+  <p>Gangout is the world's largest network of local groups. Gangoutmakes it easy for anyone to organize a local group or find one of the thousands already meeting up face-to-face. More than 9,000 groups get together in local communities each day, each one with the goal of improving themselves or their communities.
+Gangout's mission is to revitalize local community and help people around the world self-organize. Meetup believes that people can change their personal world, or the whole world, by organizing themselves into groups that are powerful enough to make a difference.</p>
+ <body> 
+<p><img src="Anoop.png" alt="Smiley face" width="42" height="42" align="middle"> ANUP KADHYA, Merations Manager
+ANUP leads the Office Ops & Admin teams ensuring everything runs smoothly & efficiently from H2T.</p>
+<p><img src="joshi.png" alt="Smiley face" width="42" height="42" align="middle">
+RAGHAVENDRA JOSHI, Team Coach Engineer
+Joshi helps the engineering team get things done smoothly and faster than ever before. Outside of technology, he enjoys making the perfect cup of coffee, catching up on the Times and when he has the time, traveling to remotes spots around Karnataka.</p>
+<p><img src="kiran.png" alt="Smiley face" width="42" height="42" align="middle">Kiran Kumar, Community Experience Program Manager
+Kiran Kumar helps members make meaningful connections with people with shared interests and helps to make sure that Meetup is a safe and trustworthy place. Originally from Hubli.</p>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+
+
+}
+jQuery('.a1').click(function(){
+	jQuery('.home').css('display','none');
+	jQuery('.about').css('display',"block");
+});
+
+</script>
+
+</body>
+</html>
+
