@@ -1,0 +1,29 @@
+
+
+
+
+ .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+
+  .page1{
+    	display:none; 
+  }
+  .col-xs-4{
+  	width:20px;
+  	height: 50px;
+  font-size:40px;
+  }
+  #footer{
+  	text-align:right;
+  	font-size: 40px; 
+  }
+
+
+  #demo1{
+  	margin: 20px;
+  }
+
+  
